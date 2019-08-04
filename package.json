@@ -8,6 +8,7 @@
     "build:types": "tsc --emitDeclarationOnly",
     "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
     "test": "jest",
+    "test:watch": "jest --watch",
     "lint": "eslint . --ext .ts,.tsx"
   },
   "author": "verden11",
@@ -21,6 +22,7 @@
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-typescript": "^7.3.3",
     "@types/jest": "^24.0.15",
+    "@types/node": "^12.6.8",
     "@typescript-eslint/eslint-plugin": "^1.13.0",
     "@typescript-eslint/parser": "^1.13.0",
     "eslint": "^6.1.0",
