@@ -13,7 +13,7 @@ export const solution = (n: number, m: number, i: number, j: number): number => 
   const mask = left | right;
 
   const n_cleared = n & mask; // Clear bits j through i
-  const m_shifted = m << i; 
+  const m_shifted = m << i;
 
   return n_cleared | m_shifted;
 };
