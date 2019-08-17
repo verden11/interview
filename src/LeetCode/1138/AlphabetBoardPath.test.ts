@@ -18,7 +18,6 @@ test('Example 3', () => {
   expect(result).toBe('DDDDD!UUUUURRR!LLLDDDDD!');
 });
 
-
 test('Example 4', () => {
   const target = 'zb';
   const result = solution(target);

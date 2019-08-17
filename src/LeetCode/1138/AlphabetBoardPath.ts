@@ -1,3 +1,12 @@
+function move(distance: number, horizontal: boolean): string {
+  const dir = horizontal ? ['R', 'L'] : ['D', 'U'];
+  if (distance > 0) {
+    return dir[0].repeat(distance);
+  } else {
+    return dir[1].repeat(Math.abs(distance));
+  }
+}
+
 export const solution = (target: string): string => {
   if (target.length < 1) return '';
   const path: string[] = [];
@@ -25,12 +34,3 @@ export const solution = (target: string): string => {
   }
   return path.join('');
 };
-
-function move(distance: number, horizontal: boolean): string {
-  const dir = horizontal ? ['R', 'L'] : ['D', 'U'];
-  if (distance > 0) {
-    return dir[0].repeat(distance);
-  } else {
-    return dir[1].repeat(Math.abs(distance));
-  }
-}
