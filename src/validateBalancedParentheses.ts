@@ -1,6 +1,6 @@
 export function solution(input: string): boolean {
   const stack = [];
-  for (let ch of input) {
+  for (const ch of input) {
     switch (ch) {
       case '(':
         stack.push(ch);
