@@ -28,13 +28,6 @@ test('case 4', (): void => {
   expect(result).toBe(a * b);
 });
 
-test('result higher than 2^32', (): void => {
-  const a = 2 ** 28;
-  const b = 4;
-  const result = solution(a, b);
-  expect(result).toBe(a * b);
-});
-
 test('negative inputs', (): void => {
   const a = 1;
   const b = -5;
