@@ -42,7 +42,6 @@ export const solution = (grid: boolean[][]): Point[] | null => {
   const points: Point[] = [];
   const failedPoints: Set<string> = new Set();
   if (getPath(grid, grid.length - 1, grid[0].length - 1, points, failedPoints)) {
-    console.log(points);
     return points;
   }
   return null;
