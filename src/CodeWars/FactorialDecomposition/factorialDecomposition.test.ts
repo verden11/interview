@@ -1,4 +1,4 @@
-import { solution } from './factorialDecomposition';
+import { decomp } from './factorialDecomposition';
 
 describe('Factorial Decomposition', () => {
   it('basic cases', () => {

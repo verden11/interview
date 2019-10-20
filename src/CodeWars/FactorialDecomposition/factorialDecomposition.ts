@@ -63,23 +63,3 @@ export function decomp(n: number): string {
 
   return ret.slice(0, -3);
 }
-
-export function decomp2(n: number): string {
-  const map = new Map();
-  const tmpMap = factorNumber(n);
-  for (const entry of tmpMap.keys()) {
-    map.set(entry, (map.get(entry) || 0) + tmpMap.get(entry));
-  }
-
-  let ret = '';
-  // build return string
-  for (const entry of map.entries()) {
-    const key = entry[0];
-    const value = entry[1];
-    ret += value > 1 ? `(${key}**${value})` : `(${key})`;
-  }
-
-  return ret;
-}
-
-console.log(decomp2(7775460));
