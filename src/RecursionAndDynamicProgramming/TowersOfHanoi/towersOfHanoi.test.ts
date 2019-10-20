@@ -12,7 +12,7 @@ describe('Towers of Hanoi', (): void => {
     expect(tower3.size()).toBe(N);
   });
 
-  it.only('case N = 5', (): void => {
+  it('case N = 5', (): void => {
     const N = 5;
     const towers = solution(N);
     expect(towers).toHaveLength(3);
