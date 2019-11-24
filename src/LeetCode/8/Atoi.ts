@@ -4,6 +4,6 @@ export const solution = (s: string): number => {
 
   // check if the number is 32-bit signed integer [-2^31, 2^31 -1]
   const power = Math.log2(Math.abs(result));
-  if (power > 30) return result > 0 ? 2 ** 31 - 1 : (-2) ** 31;
+  if (power >= 31) return result > 0 ? 2 ** 31 - 1 : (-2) ** 31;
   return result;
 };

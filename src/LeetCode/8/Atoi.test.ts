@@ -29,3 +29,15 @@ test('large number', (): void => {
   const result = solution(input);
   expect(result).toBe(Math.pow(-2, 31));
 });
+
+test('large positive number', (): void => {
+  const input = '2147483648';
+  const result = solution(input);
+  expect(result).toBe(2147483647);
+});
+
+test('large postive number 2', (): void => {
+  const input = '2147483646';
+  const result = solution(input);
+  expect(result).toBe(2147483646);
+});
